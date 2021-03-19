@@ -2,7 +2,7 @@
 
 This repository contains code and data needed to reproduce the article:
 
-**Wu N. C., Rubin A., & Seebacher, F.** Exposure to endocrine disruptors and warming alters the energetic cost of growth (In prep) *Journal*, **xxx**, xxx-xxx, DOI: https://doi.org/10.1111/gcb.15127
+**Wu N. C., Rubin A. M., & Seebacher, F.** Exposure to endocrine disruptors and warming alters the energetic cost of growth (In prep) *Journal*, **xxx**, xxx-xxx, DOI: https://doi.org/10.1111/gcb.15127
 
 **Raw data**
 - meta data raw.csv    - Meta-data used for the meta-analysis.
