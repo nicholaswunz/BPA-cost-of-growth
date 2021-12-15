@@ -1,4 +1,4 @@
-# Warming and BPA mediates energetic cost of growth
+# Effect of warming and BPA on the energetic cost of growth
 
 This repository contains data needed to reproduce the article:
 
