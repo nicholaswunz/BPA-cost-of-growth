@@ -1,25 +1,19 @@
-# Energetic cost of growth
+# Warming and BPA mediates energetic cost of growth
 
-This repository contains code and data needed to reproduce the article:
+This repository contains data needed to reproduce the article:
 
-**Wu N. C., Rubin A. M., & Seebacher, F.** Exposure to endocrine disruptors and warming alters the energetic cost of growth (In prep) *Journal*, **xxx**, xxx-xxx, DOI: https://doi.org/10.1111/gcb.15127
+**Wu N. C., Rubin A. M., & Seebacher, F.** (In review) Endocrine disruption from plastic pollution and warming interact to increase the energetic cost of growth in a fish *Journal*, **Proceedings of the Royal Society B**.
 
 **Raw data**
 - meta data raw.csv    - Meta-data used for the meta-analysis.
 - BPA level enviro.csv - Environmental BPA data used for the analysis.
 - BPA level taxa.csv   - BPA in aquatic organisms data used for the analysis.
 - world_2.csv          - Global BPA and plastic level data used for the analysis.
-- phylo_cor_all.RDAT   - Phylogenetic co-variance matrix for the meta-analysis.
-
-**R codes**
-- meta_analysis.R      - Meta-analysis, meta-regressions and figure production.
-- meta_phylo.R         - Build phylogeny and estimate phylogenetic relatedness among species.
-- BPA levels.R         - Plotting BPA levels in taxa and the envrironment, produce global distribution map and analysis.
 
 **Extra files**
 - GCB-20-0299_SI.PDF - Supplementary file includes statistical outcomes and additional figures and descriptions from the main document.
 
 ## Abstract
-To do - Plastic pollution is a global environmental concern. In particular, the endocrine-disrupting chemical (EDC) bisphenol A (BPA) is nearly ubiquitous in aquatic environments globally, and it continues to be produced and released into the environment in large quantities. BPA disrupts hormone signalling and can thereby have far-reaching physiological and ecological consequences. However, it is not clear whether BPA has consistent effects across biological traits and phylogenetic groups. Hence, the aim of this study was to establish the current state-of-knowledge of the effect of BPA in aquatic organisms. We show that overall BPA exposure affected aquatic organisms negatively. It increased abnormalities, altered behaviour, and had negative effects on the cardiovascular system, development, growth, and survival. Early life stages were the most sensitive to BPA exposure in invertebrates and vertebrates, and invertebrates and amphibians seem to be particularly affected. These data provide a context for management efforts in the face of increasing plastic pollution. However, data availability is highly biased with respect to taxonomic groups and traits studies, and in the geographical distribution of sample collection. The latter is the case for both measurements of the biological responses and assessing pollution levels in water ways. Future research effort should be directed towards biological systems, such as studying endocrine disruption directly, and geographical areas (particularly in Africa and Asia) which we identify to be currently undersampled.
+Energetic cost of growth determines how much food-derived energy is needed to produce a given amount of new biomass, and thereby influences energy transduction between trophic levels. Growth and development are regulated by hormones and are therefore sensitive to changes in temperature and environmental endocrine disruption. Here we show that the endocrine disruptor bisphenol A at an environmentally relevant concentration (BPA; 10 μg l⁻¹) decreased fish (*Danio rerio*) size at 30 °C water temperature. Under the same conditions, it significantly increased metabolic rates and the energetic cost of growth across development. In contrast, BPA decreased cost of growth at cooler temperatures (24 °C). BPA-mediated changes in cost of growth were not associated with mitochondrial efficiency (P/O ratios [i.e., ADP used/oxygen consumed] and respiratory control ratios) although BPA did increase mitochondrial proton leak. In females, BPA decreased age at maturity at 24 °C but increased it at 30 °C, and it decreased the gonadosomatic index suggesting reduced investment into reproduction. Our data reveal a potentially serious emerging problem: increasing water temperatures resulting from climate warming together with endocrine disruption from plastic pollution can impact animal growth efficiency, and hence the dynamics and resilience of animal populations and the services these provide.
 
-**Keywords:** BPA, climate change, metabolic rate, pollution, growth, mitochondria
+**Keywords:** bisphenol A, climate change, metabolism, mitochondria, zebrafish, trophic levels
