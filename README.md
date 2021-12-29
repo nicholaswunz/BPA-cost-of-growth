@@ -1,14 +1,19 @@
 # Effect of warming and BPA on the energetic cost of growth
 
-This repository contains data needed to reproduce the article:
+This repository contains data needed to reproduce the prediction map:
 
-**Wu N. C., Rubin A. M., & Seebacher, F.** (In review) Endocrine disruption from plastic pollution and warming interact to increase the energetic cost of growth in a fish. *Proceedings of the Royal Society B*,
+**Wu N. C., Rubin A. M., & Seebacher, F.** (Accepted) Endocrine disruption from plastic pollution and warming interact to increase the energetic cost of growth in a fish. *Proceedings of the Royal Society B*,
 
 **Raw data**
 - meta data raw.csv    - Meta-data used for the meta-analysis.
 - BPA level enviro.csv - Environmental BPA data used for the analysis.
-- BPA level taxa.csv   - BPA in aquatic organisms data used for the analysis.
-- world_2.csv          - Global BPA and plastic level data used for the analysis.
+- 2050AOGCM.RCP85.Surface.Temperature.Mean.tif - RCP8.5 sea surface temperature 2040-2050
+- 2100AOGCM.RCP85.Surface.Temperature.Mean.tif - RCP8.5 sea surface temperature 2090-2100
+- SAUEEZ_July2015.shp                          - Shape file of Exclusive Economic Zone (EEZ) 
+
+**Analysis**
+- Experiment analysis was performed by F.S.
+- plastic_pollution_map.R - Data cleaning, analysis and figure production for Fig. 4.
 
 **Extra files**
 - GCB-20-0299_SI.PDF - Supplementary file includes statistical outcomes and additional figures and descriptions from the main document.
