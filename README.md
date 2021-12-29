@@ -7,8 +7,8 @@ This repository contains data needed to reproduce the prediction map:
 **Raw data**
 - meta data raw.csv    - Meta-data used for the meta-analysis.
 - BPA level enviro.csv - Environmental BPA data used for the analysis.
-- 2050AOGCM.RCP85.Surface.Temperature.Mean.tif - RCP8.5 sea surface temperature 2040-2050
-- 2100AOGCM.RCP85.Surface.Temperature.Mean.tif - RCP8.5 sea surface temperature 2090-2100
+- 2050AOGCM.RCP85.Surface.Temperature.Mean.tif - RCP8.5 sea surface temperature 2040-2050 from Bio-ORACLE v2.1
+- 2100AOGCM.RCP85.Surface.Temperature.Mean.tif - RCP8.5 sea surface temperature 2090-2100 from Bio-ORACLE v2.1
 - PlasticRiverInputs.shp                       - Shape file of global plastic river input from [Lebreton et al (2015)](https://www.nature.com/articles/ncomms15611).
 - SAUEEZ_July2015.shp                          - Shape file of Exclusive Economic Zone (EEZ) 
 
