@@ -15,6 +15,8 @@ This repository contains data needed to reproduce the prediction map:
 
 **Analysis**
 - Experiment analysis was performed by F.S.
+
+**R Code**
 - plastic_pollution_map.R - Data cleaning, analysis and figure production for Fig. 4.
 
 **Extra files**
