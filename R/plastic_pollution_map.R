@@ -56,35 +56,35 @@ temp_2100_df <- as.data.frame(raster::rasterToPoints(temp_2100))
 surf_temp_df <- surf_temp_df %>% 
   dplyr::rename(mean_ss_temp = BO21_tempmean_ss) %>% 
   dplyr::mutate(category = dplyr::case_when(
-    mean_ss_temp >= 30                     ~ '>30캜',                       
-    mean_ss_temp >= 25 & mean_ss_temp < 30 ~ '25-30캜', 
-    mean_ss_temp >= 20 & mean_ss_temp < 25 ~ '20-25캜',   
-    mean_ss_temp > 10  & mean_ss_temp < 20 ~ '>10-20캜',     
-    mean_ss_temp <= 10                     ~ '<10캜')) %>% 
+    mean_ss_temp >= 30                     ~ '>30째C',                       
+    mean_ss_temp >= 25 & mean_ss_temp < 30 ~ '25-30째C', 
+    mean_ss_temp >= 20 & mean_ss_temp < 25 ~ '20-25째C',   
+    mean_ss_temp > 10  & mean_ss_temp < 20 ~ '>10-20째C',     
+    mean_ss_temp <= 10                     ~ '<10째C')) %>% 
   dplyr::mutate(category = factor(category,
-                                  levels = c('>30캜', '25-30캜', '20-25캜', '>10-20캜', '<10캜'),
+                                  levels = c('>30째C', '25-30째C', '20-25째C', '>10-20째C', '<10째C'),
                                   ordered = TRUE))
 temp_2050_df <- temp_2050_df %>% 
   dplyr::rename(mean_ss_temp = X2050AOGCM.RCP85.Surface.Temperature.Mean) %>% 
   dplyr::mutate(category = dplyr::case_when(
-    mean_ss_temp >= 30                     ~ '>30캜',                       
-    mean_ss_temp >= 25 & mean_ss_temp < 30 ~ '25-30캜', 
-    mean_ss_temp >= 20 & mean_ss_temp < 25 ~ '20-25캜',   
-    mean_ss_temp > 10  & mean_ss_temp < 20 ~ '>10-20캜',     
-    mean_ss_temp <= 10                     ~ '<10캜')) %>% 
+    mean_ss_temp >= 30                     ~ '>30째C',                       
+    mean_ss_temp >= 25 & mean_ss_temp < 30 ~ '25-30째C', 
+    mean_ss_temp >= 20 & mean_ss_temp < 25 ~ '20-25째C',   
+    mean_ss_temp > 10  & mean_ss_temp < 20 ~ '>10-20째C',     
+    mean_ss_temp <= 10                     ~ '<10째C')) %>% 
   dplyr::mutate(category = factor(category,
-                                  levels = c('>30캜', '25-30캜', '20-25캜', '>10-20캜', '<10캜'),
+                                  levels = c('>30째C', '25-30째C', '20-25째C', '>10-20째C', '<10째C'),
                                   ordered = TRUE))
 temp_2100_df <- temp_2100_df %>% 
   dplyr::rename(mean_ss_temp = X2100AOGCM.RCP85.Surface.Temperature.Mean) %>% 
   dplyr::mutate(category = dplyr::case_when(
-    mean_ss_temp >= 30                     ~ '>30캜',                       
-    mean_ss_temp >= 25 & mean_ss_temp < 30 ~ '25-30캜', 
-    mean_ss_temp >= 20 & mean_ss_temp < 25 ~ '20-25캜',   
-    mean_ss_temp > 10  & mean_ss_temp < 20 ~ '>10-20캜',     
-    mean_ss_temp <= 10                     ~ '<10캜')) %>% 
+    mean_ss_temp >= 30                     ~ '>30째C',                       
+    mean_ss_temp >= 25 & mean_ss_temp < 30 ~ '25-30째C', 
+    mean_ss_temp >= 20 & mean_ss_temp < 25 ~ '20-25째C',   
+    mean_ss_temp > 10  & mean_ss_temp < 20 ~ '>10-20째C',     
+    mean_ss_temp <= 10                     ~ '<10째C')) %>% 
   dplyr::mutate(category = factor(category,
-                                  levels = c('>30캜', '25-30캜', '20-25캜', '>10-20캜', '<10캜'),
+                                  levels = c('>30째C', '25-30째C', '20-25째C', '>10-20째C', '<10째C'),
                                   ordered = TRUE))
 
 ## PLASTIC POLLUTION MAP ##-------------------------------------------------------
@@ -136,55 +136,55 @@ grouped_df <- plastic_df_2 %>%
 # Categorise risk factor
 grouped_df <- grouped_df %>% 
   dplyr::mutate(risk_current = dplyr::case_when(
-    ss_temp_current >= 30                        & plastic_level >= 100                     ~ 'High risk (>30캜 + >100 t/yr)', 
-    ss_temp_current >= 30                        & plastic_level >= 1 & plastic_level < 100 ~ 'Medium risk (25-30캜 + >1 t/yr)',
+    ss_temp_current >= 30                        & plastic_level >= 100                     ~ 'High risk (>30째C + >100 t/yr)', 
+    ss_temp_current >= 30                        & plastic_level >= 1 & plastic_level < 100 ~ 'Medium risk (25-30째C + >1 t/yr)',
     ss_temp_current >= 30                        & plastic_level > 0 & plastic_level < 1    ~ 'Low risk (<1 t/yr)', 
     ss_temp_current >= 30                        & plastic_level == 0                       ~ 'No risk (0 t/yr)',
-    ss_temp_current >= 25 & ss_temp_current < 30 & plastic_level >= 100                     ~ 'Medium risk (25-30캜 + >1 t/yr)', 
+    ss_temp_current >= 25 & ss_temp_current < 30 & plastic_level >= 100                     ~ 'Medium risk (25-30째C + >1 t/yr)', 
     ss_temp_current >= 25 & ss_temp_current < 30 & plastic_level >= 1 & plastic_level < 100 ~ 'Low risk (<1 t/yr)',
     ss_temp_current >= 25 & ss_temp_current < 30 & plastic_level > 0 & plastic_level < 1    ~ 'Low risk (<1 t/yr)', 
     ss_temp_current >= 25 & ss_temp_current < 30 & plastic_level == 0                       ~ 'No risk (0 t/yr)',
-    ss_temp_current < 25                         & plastic_level >= 100                     ~ 'Medium risk (25-30캜 + >1 t/yr)', 
+    ss_temp_current < 25                         & plastic_level >= 100                     ~ 'Medium risk (25-30째C + >1 t/yr)', 
     ss_temp_current < 25                         & plastic_level >= 1 & plastic_level < 100 ~ 'Low risk (<1 t/yr',
     ss_temp_current < 25                         & plastic_level > 0 & plastic_level < 1    ~ 'Low risk (<1 t/yr)', 
     ss_temp_current < 25                         & plastic_level == 0                       ~ 'No risk (0 t/yr)')) %>% 
   dplyr::mutate(risk_2050 = dplyr::case_when(
-    ss_temp_2050 >= 30                     & plastic_level >= 100                     ~ 'High risk (>30캜 + >100 t/yr)', 
-    ss_temp_2050 >= 30                     & plastic_level >= 1 & plastic_level < 100 ~ 'Medium risk (25-30캜 + >1 t/yr)',
+    ss_temp_2050 >= 30                     & plastic_level >= 100                     ~ 'High risk (>30째C + >100 t/yr)', 
+    ss_temp_2050 >= 30                     & plastic_level >= 1 & plastic_level < 100 ~ 'Medium risk (25-30째C + >1 t/yr)',
     ss_temp_2050 >= 30                     & plastic_level > 0 & plastic_level < 1    ~ 'Low risk (<1 t/yr)', 
     ss_temp_2050 >= 30                     & plastic_level == 0                       ~ 'No risk (0 t/yr)',
-    ss_temp_2050 >= 25 & ss_temp_2050 < 30 & plastic_level >= 100                     ~ 'Medium risk (25-30캜 + >1 t/yr)', 
+    ss_temp_2050 >= 25 & ss_temp_2050 < 30 & plastic_level >= 100                     ~ 'Medium risk (25-30째C + >1 t/yr)', 
     ss_temp_2050 >= 25 & ss_temp_2050 < 30 & plastic_level >= 1 & plastic_level < 100 ~ 'Low risk (<1 t/yr)',
     ss_temp_2050 >= 25 & ss_temp_2050 < 30 & plastic_level > 0 & plastic_level < 1    ~ 'Low risk (<1 t/yr)', 
     ss_temp_2050 >= 25 & ss_temp_2050 < 30 & plastic_level == 0                       ~ 'No risk (0 t/yr)',
-    ss_temp_2050 < 25                      & plastic_level >= 100                     ~ 'Medium risk (25-30캜 + >1 t/yr)', 
+    ss_temp_2050 < 25                      & plastic_level >= 100                     ~ 'Medium risk (25-30째C + >1 t/yr)', 
     ss_temp_2050 < 25                      & plastic_level >= 1 & plastic_level < 100 ~ 'Low risk (<1 t/yr',
     ss_temp_2050 < 25                      & plastic_level > 0 & plastic_level < 1    ~ 'Low risk (<1 t/yr)', 
     ss_temp_2050 < 25                      & plastic_level == 0                       ~ 'No risk (0 t/yr)')) %>% 
   dplyr::mutate(risk_2100 = dplyr::case_when(
-    ss_temp_2100 >= 30                     & plastic_level >= 100                     ~ 'High risk (>30캜 + >100 t/yr)', 
-    ss_temp_2100 >= 30                     & plastic_level >= 1 & plastic_level < 100 ~ 'Medium risk (25-30캜 + >1 t/yr)',
+    ss_temp_2100 >= 30                     & plastic_level >= 100                     ~ 'High risk (>30째C + >100 t/yr)', 
+    ss_temp_2100 >= 30                     & plastic_level >= 1 & plastic_level < 100 ~ 'Medium risk (25-30째C + >1 t/yr)',
     ss_temp_2100 >= 30                     & plastic_level > 0 & plastic_level < 1    ~ 'Low risk (<1 t/yr)', 
     ss_temp_2100 >= 30                     & plastic_level == 0                       ~ 'No risk (0 t/yr)',
-    ss_temp_2100 >= 25 & ss_temp_2100 < 30 & plastic_level >= 100                     ~ 'Medium risk (25-30캜 + >1 t/yr)', 
+    ss_temp_2100 >= 25 & ss_temp_2100 < 30 & plastic_level >= 100                     ~ 'Medium risk (25-30째C + >1 t/yr)', 
     ss_temp_2100 >= 25 & ss_temp_2100 < 30 & plastic_level >= 1 & plastic_level < 100 ~ 'Low risk (<1 t/yr)',
     ss_temp_2100 >= 25 & ss_temp_2100 < 30 & plastic_level > 0 & plastic_level < 1    ~ 'Low risk (<1 t/yr)', 
     ss_temp_2100 >= 25 & ss_temp_2100 < 30 & plastic_level == 0                       ~ 'No risk (0 t/yr)',
-    ss_temp_2100 < 25                      & plastic_level >= 100                     ~ 'Medium risk (25-30캜 + >1 t/yr)', 
+    ss_temp_2100 < 25                      & plastic_level >= 100                     ~ 'Medium risk (25-30째C + >1 t/yr)', 
     ss_temp_2100 < 25                      & plastic_level >= 1 & plastic_level < 100 ~ 'Low risk (<1 t/yr)',
     ss_temp_2100 < 25                      & plastic_level > 0 & plastic_level < 1    ~ 'Low risk (<1 t/yr)', 
     ss_temp_2100 < 25                      & plastic_level == 0                       ~ 'No risk (0 t/yr)')) %>% 
   dplyr::mutate(risk_current = factor(risk_current,
                                   levels = c('No risk (0 t/yr)', 'Low risk (<1 t/yr)',
-                                             'Medium risk (25-30캜 + >1 t/yr)', 'High risk (>30캜 + >100 t/yr)'),
+                                             'Medium risk (25-30째C + >1 t/yr)', 'High risk (>30째C + >100 t/yr)'),
                                   ordered = TRUE)) %>% 
   dplyr::mutate(risk_2050 = factor(risk_2050,
                                    levels = c('No risk (0 t/yr)', 'Low risk (<1 t/yr)',
-                                              'Medium risk (25-30캜 + >1 t/yr)', 'High risk (>30캜 + >100 t/yr)'),
+                                              'Medium risk (25-30째C + >1 t/yr)', 'High risk (>30째C + >100 t/yr)'),
                                    ordered = TRUE)) %>% 
   dplyr::mutate(risk_2100 = factor(risk_2100,
                                    levels = c('No risk (0 t/yr)', 'Low risk (<1 t/yr)',
-                                              'Medium risk (25-30캜 + >1 t/yr)', 'High risk (>30캜 + >100 t/yr)'),
+                                              'Medium risk (25-30째C + >1 t/yr)', 'High risk (>30째C + >100 t/yr)'),
                                    ordered = TRUE))
 
 ## FISHERIES ## ------------------------------------------------------------------
@@ -266,10 +266,10 @@ risk_2100_map <- ggplot() +
 risk_current_sum <- grouped_df %>% 
   dplyr::group_by(risk_current) %>% 
   dplyr::summarise(n = length(risk_current)) %>% 
-  tibble::add_row(risk_current = "High risk (>30캜 + >100 t/yr)", n = 0) %>%
+  tibble::add_row(risk_current = "High risk (>30째C + >100 t/yr)", n = 0) %>%
   dplyr::arrange(risk_current = factor(risk_current,
                                        levels = c('No risk (0 t/yr)', 'Low risk (<1 t/yr)',
-                                                  'Medium risk (25-30캜 + >1 t/yr)', 'High risk (>30캜 + >100 t/yr)'),
+                                                  'Medium risk (25-30째C + >1 t/yr)', 'High risk (>30째C + >100 t/yr)'),
                                        ordered = TRUE))
 
 # Calculate grid cells occupied for future climate
@@ -294,6 +294,7 @@ change_plot <- risk_current_sum %>%
   mytheme()
 
 #COMBINE PLOTS
+# Fig 4
 cowplot::plot_grid(risk_curr_map + ggtitle("Current scenario (2000-2014)"), 
                    risk_2050_map + ggtitle("Future scenario (2040-2050)"), 
                    risk_2100_map + ggtitle("Future scenario (2090-2100)"),
@@ -305,17 +306,14 @@ all_df <- grouped_df %>%
   dplyr::right_join(catch_df, by = c("x" ,"y")) %>%
   dplyr::rename(total_kg_km = layer,
                 catch_cat   = category)
-names(all_df)
-levels(all_df$risk_2050)
 
-# GENERAL STAN SPECS
 rstan::rstan_options(auto_write = TRUE) # translate to STAN platform for running Bayesian model
 options(mc.cores = parallel::detectCores()) # detects how many cores available to use
 
 all_df$lnPlastic <-  log(all_df$plastic_level + 1)
 all_df$lnCatch   <-  log(all_df$total_kg_km + 1)
 
-catch_prior  <- prior(normal(0, 5), class = "Intercept") + prior(normal(0, 5), class = "b")
+catch_prior <- prior(normal(0, 5), class = "Intercept") + prior(normal(0, 5), class = "b")
 catch_model <- brms::brm(bf(lnCatch ~ lnPlastic + ss_temp_current, sigma ~ lnCatch), 
                          data    = all_df,
                          family  = gaussian,
@@ -334,6 +332,7 @@ plot(conditional_effects(catch_model), points = TRUE)
 catch_me <- marginal_effects(catch_model, "lnPlastic")
 catchme_df <- catch_me$'lnPlastic'
 
+# Fig S5
 all_df %>% 
   ggplot(aes(x = lnPlastic, y = lnCatch)) +
   geom_point(aes(colour = risk_2050, alpha = risk_2050), size = 2) +
@@ -349,12 +348,10 @@ all_df %>%
 eez_shp <- sf::st_read("SAUEEZ_July2015.shp")
 eez_sp  <- as(eez_shp, "Spatial") # convert to sp class
 
-names(grouped_df)
 grouped_df <- grouped_df %>%
   dplyr::mutate(rank_current = as.numeric(factor(risk_current)) - 1,
                 rank_2050    = as.numeric(factor(risk_2050)) - 1,
                 rank_2100    = as.numeric(factor(risk_2100)) - 1)
-
 
 map_extent       <- raster::extent(surf_temp) # match extent with sea surface temp
 rank_raster      <- raster::raster(map_extent, ncol = 500, nrow = 500, crs = "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0", res = 1)
@@ -368,47 +365,11 @@ rank_2050_mean    <- raster::extract(rank_2050_ras, eez_shp, fun = mean, na.rm =
 rank_2100_mean    <- raster::extract(rank_2100_ras, eez_shp, fun = mean, na.rm = TRUE)
 
 # Join mean values to polygon data
-eez_df <- data.frame(eez_shp, rank_current = rank_current_mean,
+eez_df <- data.frame(eez_shp, 
+                     rank_current = rank_current_mean,
                      rank_2050 = rank_2050_mean,
                      rank_2100 = rank_2100_mean)
-nc_df <- eez_df %>% 
-  as.data.frame() %>% 
-  select(Name, rank_current, rank_2050,rank_2100)
-
-eez_merged <- merge(eez_shp, nc_df, by = "Name")
-
-eez_curr_plot <- ggplot() +
-  geom_sf(data = eez_merged, aes(fill = rank_current), colour = NA, show.legend = FALSE) +
-  colorspace::scale_fill_continuous_sequential(palette = "YlOrRd", na.value = NA, begin = 0, end = 0.7) +
-  scale_y_continuous(limits = c(-60, 62), expand = c(0, 0)) +
-  scale_x_continuous(limits = c(-180, 180), expand = c(0, 0)) +
-  ylab(NULL) + xlab(NULL) +
-  mytheme() +
-  theme(axis.title = element_blank(), axis.text = element_blank(), axis.ticks = element_blank())
-
-eez_2050_plot <- ggplot() +
-  geom_sf(data = eez_merged, aes(fill = rank_2050), colour = NA, show.legend = FALSE) +
-  colorspace::scale_fill_continuous_sequential(palette = "YlOrRd", na.value = NA, begin = 0, end = 1) +
-  scale_y_continuous(limits = c(-60, 62), expand = c(0, 0)) +
-  scale_x_continuous(limits = c(-180, 180), expand = c(0, 0)) +
-  ylab(NULL) + xlab(NULL) +
-  mytheme() +
-  theme(axis.title = element_blank(), axis.text = element_blank(), axis.ticks = element_blank())
-
-eez_2100_plot <- ggplot() +
-  geom_sf(data = eez_merged, aes(fill = rank_2100), colour = NA, show.legend = FALSE) +
-  colorspace::scale_fill_continuous_sequential(palette = "YlOrRd", na.value = NA, begin = 0, end = 1) +
-  scale_y_continuous(limits = c(-60, 62), expand = c(0, 0)) +
-  scale_x_continuous(limits = c(-180, 180), expand = c(0, 0)) +
-  ylab(NULL) + xlab(NULL) +
-  mytheme() +
-  theme(axis.title = element_blank(), axis.text = element_blank(), axis.ticks = element_blank())
-
-cowplot::plot_grid(eez_curr_plot + ggtitle("Current scenario (2000-2014)"), 
-                   eez_2050_plot + ggtitle("Future scenario (2040-2050)"), 
-                   eez_2100_plot + ggtitle("Future scenario (2090-2100)"),
-                   ncol = 2)
-
+# Fig S6
 eez_df %>%
   arrange(desc(rank_current)) %>%
   slice(1:40) %>%
@@ -419,6 +380,6 @@ eez_df %>%
   ylab("Risk score (arbitrary)") + xlab(NULL) +
   colorspace::scale_colour_continuous_sequential(palette = "YlOrRd", begin = 0.5, end = 1) +
   coord_flip() +
-  ggtitle("Change in risk for Exclusive Economic Zone by 2040-2050") +
+  ggtitle("Risk by Exclusive Economic Zone (EEZ)") +
   mytheme()
 
