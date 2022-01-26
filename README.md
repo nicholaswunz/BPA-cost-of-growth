@@ -5,6 +5,10 @@ This repository contains data needed to reproduce the prediction maps:
 **Wu N. C., Rubin A. M., & Seebacher, F.** (2022) Endocrine disruption from plastic pollution and warming interact to increase the energetic cost of growth in a fish. *Proceedings of the Royal Society B*, **289**, 20212077. DOI:
 [![DOI](https://zenodo.org/badge/DOI/10.1098/rspb.2021.2077.svg)](http://doi.org/10.1098/rspb.2021.2077)
 
+**When using the data or code from this project, please cite it as:**
+
+Seebacher, Frank; Wu, Nicholas; Alexander, Rubin (2022), Endocrine disruption from plastic pollution and warming interact to increase the energetic cost of growth in a fish, *Dryad*, Dataset. DOI: [![DOI](https://zenodo.org/badge/DOI/10.5061/dryad.v6wwpzgxm.svg)](https://doi.org/10.5061/dryad.v6wwpzgxm)
+
 **Raw data**
 - 2050AOGCM.RCP85.Surface.Temperature.Mean.tif - RCP8.5 sea surface temperature 2040-2050 from Bio-ORACLE v2.1
 - 2100AOGCM.RCP85.Surface.Temperature.Mean.tif - RCP8.5 sea surface temperature 2090-2100 from Bio-ORACLE v2.1
