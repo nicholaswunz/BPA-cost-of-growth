@@ -16,10 +16,10 @@ This repository contains data needed to reproduce the prediction map:
 - Experiment analysis was performed by F.S.
 
 **R Code**
-- plastic_pollution_map.R - Data cleaning, analysis and figure production for Fig. 4.
+- plastic_pollution_map.R - Data cleaning, analysis and figure production for Fig. 4 and supplementary figures.
 
 **Extra files**
-- GCB-20-0299_SI.PDF - Supplementary file includes statistical outcomes and additional figures and descriptions from the main document.
+- rspb20212077_si_001.docx - Supplementary file includes statistical outcomes and additional figures and descriptions from the main document.
 
 ## Abstract
 Energetic cost of growth determines how much food-derived energy is needed to produce a given amount of new biomass, and thereby influences energy transduction between trophic levels. Growth and development are regulated by hormones and are therefore sensitive to changes in temperature and environmental endocrine disruption. Here we show that the endocrine disruptor bisphenol A at an environmentally relevant concentration (BPA; 10 μg l⁻¹) decreased fish (*Danio rerio*) size at 30 °C water temperature. Under the same conditions, it significantly increased metabolic rates and the energetic cost of growth across development. In contrast, BPA decreased cost of growth at cooler temperatures (24 °C). BPA-mediated changes in cost of growth were not associated with mitochondrial efficiency (P/O ratios [i.e., ADP used/oxygen consumed] and respiratory control ratios) although BPA did increase mitochondrial proton leak. In females, BPA decreased age at maturity at 24 °C but increased it at 30 °C, and it decreased the gonadosomatic index suggesting reduced investment into reproduction. Our data reveal a potentially serious emerging problem: increasing water temperatures resulting from climate warming together with endocrine disruption from plastic pollution can impact animal growth efficiency, and hence the dynamics and resilience of animal populations and the services these provide.
