@@ -2,7 +2,7 @@
 
 This repository contains data needed to reproduce the prediction map:
 
-**Wu N. C., Rubin A. M., & Seebacher, F.** (Accepted) Endocrine disruption from plastic pollution and warming interact to increase the energetic cost of growth in a fish. *Proceedings of the Royal Society B*, **289**, 20212077. DOI:
+**Wu N. C., Rubin A. M., & Seebacher, F.** (2022) Endocrine disruption from plastic pollution and warming interact to increase the energetic cost of growth in a fish. *Proceedings of the Royal Society B*, **289**, 20212077. DOI:
 [![DOI](https://zenodo.org/badge/DOI/10.1098/rspb.2021.2077.svg)](http://doi.org/10.1098/rspb.2021.2077)
 
 **Raw data**
