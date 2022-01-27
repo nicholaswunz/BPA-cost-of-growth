@@ -12,7 +12,7 @@ Seebacher, Frank; Wu, Nicholas; Alexander, Rubin (2022), Endocrine disruption fr
 **Raw data**
 - `2050AOGCM.RCP85.Surface.Temperature.Mean.tif` - RCP8.5 sea surface temperature 2040-2050 from Bio-ORACLE v2.1
 - `2100AOGCM.RCP85.Surface.Temperature.Mean.tif` - RCP8.5 sea surface temperature 2090-2100 from Bio-ORACLE v2.1
-- `PlasticRiverInputs.shp`                       - Shape file of global plastic river input from [Lebreton et al (2015)](https://www.nature.com/articles/ncomms15611)
+- `PlasticRiverInputs.shp`                       - Shape file of global plastic river input from [Lebreton et al. (2015)](https://www.nature.com/articles/ncomms15611)
 - `SAUEEZ_July2015.shp`                          - Shape file of Exclusive Economic Zone (EEZ) from [Sea Around Us](https://www.seaaroundus.org/data/#/eez)
 - `CatchInd2015_2015.csv`                        - Catch data from [Watson (2015)](https://www.nature.com/articles/sdata201739#Sec20) 
 
