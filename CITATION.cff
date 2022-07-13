@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Wu"
+    given-names: "Nicholas C."
+    orcid: "https://orcid.org/0000-0002-7130-1279"
+- family-names: "Rubin"
+  given-names: "Alexander M."
+  - family-names: "Seebacher"
+    given-names: "Frank"
+    orcid: "https://orcid.org/0000-0002-2281-9311"
+title: "Endocrine disruption from plastic pollution and warming interact to increase the energetic cost of growth in a fish"
+version: 1.0.0
+doi: 10.5281/zenodo.1234
+date-released: 2022-01-26
+url: "https://github.com/nicholaswunz/BPA-cost-of-growth"
